@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffcee3, #ffb3d9);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background: #ffe6f3;
+      width: 360px;
+      padding: 30px 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(255, 120, 180, 0.4);
+      text-align: center;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: #d63384;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    .input-group {
+      text-align: left;
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-size: 14px;
+      color: #b21c63;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 12px;
+      background: #ffffff;
+      box-shadow: inset 0 0 5px rgba(255, 150, 200, 0.3);
+      font-size: 14px;
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 8px rgba(255, 90, 150, 0.6);
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 13px;
+      background: #ff99c8;
+      border: none;
+      border-radius: 15px;
+      font-size: 17px;
+      color: white;
+      margin-top: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-login:hover {
+      background: #ff6fb3;
+    }
+
+    .footer-text {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #a82f66;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Selamat Datang👋</h2>
+
+    <form onsubmit="return goDashboard()">
+      <div class="input-group">
+        <label>Username</label>
+        <input type="admin" id="user" placeholder="Enter username" required />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="1234" id="pass" placeholder="Enter password" required />
+      </div>
+
+      <button class="btn-login">Login</button>
+    </form>
+
+    <p class="footer-text"</p>
+  </div>
+
+  <script>
+    function goDashboard() {
+      // Login sederhana (bisa kamu ganti sesuai kebutuhan)
+      window.location.href = " dashboard.html";
+      return false;
+    }
+  </script>
+</body>
+</html>
